@@ -1,28 +1,20 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import { useAuth0 } from '@auth0/auth0-react'
-import { BrowserRouter, Routes, Route} from "react-router-dom"
-import Inicio from './pages/Inicio'
-import Peliculas from './pages/Peliculas'
-import Contacto from './pages/Contacto'
+import Formulario from './components/Formulario'
+import Home from './components/Home'
+import { useState } from 'react'
+
 
 function App() {
 
-  const {isAuthenticated, } = useAuth0 ()
-  console.log(isAuthenticated)
-
+  const [user, setUser] = useState([])
 
   return (
-    <>
-      <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Inicio />}/>
-        <Route path='/peliculas' element={<Peliculas />}/>
-        <Route path='/contacto' element={<Contacto />}/>
-      </Routes>
-      </BrowserRouter>
-    </>
+    <div className='App'>
+      {
+        !user.length > 0
+          ? <Formulario setUser={setUser} /> : <Home user={user} setUser={setUser} />
+      }
+    </div>
   )
 }
 
