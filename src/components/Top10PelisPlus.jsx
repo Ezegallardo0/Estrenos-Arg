@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Top10Pelis.css';
+import { useHref } from 'react-router-dom';
 
 const movies = [
   { number: 1, title: 'Oppenheimer', src: 'https://image.tmdb.org/t/p/original/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg' },
@@ -18,17 +19,7 @@ const Top10List = () => {
   return (
     <div className="top10-container">
       <div className="list-header">
-        <h2>Top 10 en Pelisplus hoy</h2>
-        <span>
-          <a href="/">Películas y Series</a>
-        </span>
-        <img
-          src="/wp-content/themes/pelisplus.in/assets/build/static/media/arrow_right.3e01fb7a2f1dd8e785e673194a40a59e.svg"
-          alt="icon arrow right"
-        />
-        <h3>
-          <a href="/">Top 10</a>
-        </h3>
+        <h2>Top 10 estrenos hoy</h2>
       </div>
       <div className="carousel-wrapper">
         <ul className="carousel">
@@ -55,6 +46,9 @@ const Top10List = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div>
+        <h2>Proximos Estrenos </h2>
       </div>
     </div>
   );

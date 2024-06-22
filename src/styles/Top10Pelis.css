@@ -1,0 +1,92 @@
+.top10-container {
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.list-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.list-header h2 {
+    font-size: 28px;
+    margin-left: 40%;
+    color: #ffffff;
+}
+
+
+.carousel-wrapper {
+    overflow-x: auto;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.carousel li {
+    flex: 0 0 auto;
+    width: 178px;
+    /* Ancho de cada tarjeta ajustable */
+    margin-right: 10px;
+    text-align: center;
+}
+
+.carousel li .item-number {
+    background-color: #e50914;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.carousel li .card-wrapper {
+    margin-bottom: 15px;
+}
+
+.carousel li .card {
+    border-radius: 10px;
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel li .card button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel li .card button:hover {
+    opacity: 0.8;
+}
+
+.carousel li .card picture {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.carousel li .card picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel li .card picture h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a1a;
+}

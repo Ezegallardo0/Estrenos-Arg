@@ -23,9 +23,6 @@ const Home = ({ user, setUser }) => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Peliculas</a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link" href="#">Contacto</a>
               </li>
             </ul>
