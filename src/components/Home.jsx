@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Home.css'
 import Top10PelisPlus from './Top10PelisPlus'
 
+
 const Home = ({ user, setUser }) => {
 
   const handleLogout = () => {

@@ -23,7 +23,7 @@ const Formulario = ({ setUser }) => {
         <section className='section'>
             <form className='formulario' onSubmit={handleSubmit}>
                 <div className="login wrap">
-                    <div className="h1">Login</div>
+                <h1 className='h1'>Login</h1>
                     <input
                         placeholder="Email"
                         id="email"
