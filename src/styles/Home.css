@@ -1,5 +1,5 @@
 body{
-  background-color: aliceblue;
+  background-color: #01071D
 }
 
 .buton {
@@ -45,7 +45,9 @@ body{
 }
 .H5{
   margin-right: 20px;
+  color: #E5FFFC;
 }
 .user{
   margin-right: 20px;
+  color: #E5FFFC;
 }

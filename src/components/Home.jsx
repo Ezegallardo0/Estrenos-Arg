@@ -9,7 +9,7 @@ const Home = ({ user, setUser }) => {
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Estrenos Arg</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
