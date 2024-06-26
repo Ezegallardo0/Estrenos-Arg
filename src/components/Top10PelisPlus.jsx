@@ -5,14 +5,9 @@ const Top10PelisPlus = () => {
   const movies = [
     { number: 1, title: "Oppenheimer", imgSrc: "https://image.tmdb.org/t/p/original/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg" },
     { number: 2, title: "Intensamente 2", imgSrc: "https://i.pinimg.com/736x/7d/9d/d5/7d9dd59eb9abb04c8e43494f150af4b7.jpg" },
-    { number: 3, title: "Sonido De Libertad", imgSrc: "https://image.tmdb.org/t/p/original/apxaWDCqjPrVc1v5HiKW2r10yiL.jpg" },
-    { number: 4, title: "El exorcista: Creyentes", imgSrc: "https://image.tmdb.org/t/p/original/6StdSKn9ej4rwtQjcl1XMk5E0iE.jpg" },
-    { number: 5, title: "Loki", imgSrc: "https://image.tmdb.org/t/p/original/sxy9EXgc4nJw0uGojW5jHXQXKXq.jpg" },
-    { number: 6, title: "La monja II", imgSrc: "https://image.tmdb.org/t/p/original/x0ryPlzZjpOojEAuGrre2lFuBv6.jpg" },
-    { number: 7, title: "Ahsoka", imgSrc: "https://image.tmdb.org/t/p/original/zcuJsJEhaORzxaz6aRxm66NWgt7.jpg" },
-    { number: 8, title: "Gran Turismo: De jugador a corredor", imgSrc: "https://image.tmdb.org/t/p/original/tVj5dn15iwkMhjU2wIih1yMy5LK.jpg" },
-    { number: 9, title: "Blue Beetle", imgSrc: "https://image.tmdb.org/t/p/original/z5mkvXYNRauSzHdZgxAj6MzrLTY.jpg" },
-    { number: 10, title: "Barbie", imgSrc: "https://image.tmdb.org/t/p/original/fNtqD4BTFj0Bgo9lyoAtmNFzxHN.jpg" },
+    { number: 3, title: "Kun Fu Panda 4", imgSrc: "https://image.tmdb.org/t/p/original/bqe5pdLIoLeZSszA8N5ZvoIS4aB.jpg" },
+    { number: 4, title: "Ferrari", imgSrc: "https://image.tmdb.org/t/p/original/dAP9QTLVvglGvtsa0VesaOgHcTW.jpg" },
+    { number: 5, title: "Rapidos y Furiosos", imgSrc: "https://m.media-amazon.com/images/M/MV5BNzlkNzVjMDMtOTdhZC00MGE1LTkxODctMzFmMjkwZmMxZjFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" },
   ];
 
   return (
