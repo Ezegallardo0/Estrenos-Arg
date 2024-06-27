@@ -1,17 +1,13 @@
 import React from 'react'
-import '../styles/Home.css'
-import Top10PelisPlus from './Top10PelisPlus'
-import { Link } from 'react-router-dom'
 
+const Navbar = ({ user, setUser }) => {
 
-const Home = ({ user, setUser }) => {
-
-  const handleLogout = () => {
-    setUser([])
-  }
+    const handleLogout = () => {
+      setUser([])
+    }
   return (
     <>
-      <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Estrenos Arg</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,9 +32,8 @@ const Home = ({ user, setUser }) => {
           </div>
         </div>
       </nav>
-      <Top10PelisPlus />
     </>
   )
 }
 
-export default Home
+export default Navbar
