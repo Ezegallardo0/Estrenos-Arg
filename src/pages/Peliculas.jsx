@@ -23,6 +23,15 @@ const Peliculas = ({ user, setUser }) => {
     { number: 13, title: "Transformers: La era de la extinción ", imgSrc: "https://play-lh.googleusercontent.com/-_elya146ZNLmU0wPkGMfMQsd_vORb6OENN5iFw0qYc5TjQ24obJQfe7GElKuEO61TZ8" },
     { number: 14, title: "Transformers: El último caballero", imgSrc: "https://play-lh.googleusercontent.com/LRIZYkExNKDGqpOlOXaAnKPbxwsqAEYo3BeTJJGMhGFCD3gVt7-rEEWgpboL26FCYq-I2w" },
     { number: 15, title: "Transformers: El despertar de las bestias", imgSrc: "https://i.blogs.es/72f9a1/cartel-de-transformers-7/650_1200.jpeg" },
+    { number: 16, title: "Bad Boys", imgSrc: "https://i.pinimg.com/474x/55/cd/e6/55cde6abba6f916646f46bf6210799aa.jpg" },
+    { number: 17, title: "Bad Boys II", imgSrc: "https://m.media-amazon.com/images/I/81pQr-MbePL._AC_UF894,1000_QL80_.jpg" },
+    { number: 18, title: "Bad Boys For Life", imgSrc: "https://pics.filmaffinity.com/Bad_Boys_for_Life-343590773-large.jpg" },
+    { number: 19, title: "Bad Boys IV", imgSrc: "https://blog.apis.cineplanet.com.pe/uploads/bab_boys_4_poster_cineplanet_6c7fbdcbed.jpg" },
+    { number: 20, title: "Mi Villano Favorito", imgSrc: "https://m.media-amazon.com/images/S/pv-target-images/8fae92382e8c4e08637fc3e714f50ff37975f515b6d33921f6518d6b6721739f.jpg" },
+    { number: 21, title: "Mi Villano Favorito 2", imgSrc: "https://es.web.img2.acsta.net/pictures/210/090/21009000_2013052817374835.jpg" },
+    { number: 22, title: "Minions ", imgSrc: "https://http2.mlstatic.com/D_NQ_NP_823534-MLA50961474298_082022-O.webp" },
+    { number: 23, title: "Mi Villano Favorito 3", imgSrc: "https://image.tmdb.org/t/p/original/jDUBPQLBiQZDwO3K3Zn6h343cbO.jpg" },
+    { number: 24, title: "Minions:Nace un villano", imgSrc: "https://dx35vtwkllhj9.cloudfront.net/universalstudios/minions-the-rise-of-gru/images/regions/ar/onesheet.jpg" }
   ];
   return (
     <div className="list-item top10">
