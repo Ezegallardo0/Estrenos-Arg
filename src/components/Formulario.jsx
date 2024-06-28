@@ -1,24 +1,26 @@
 import '../styles/Formulario.css'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const Formulario = ({ setUser }) => {
+const Formulario = ( ) => {
     const [nombre, setNombre] = useState("")
     const [contraseña, setContraseña] = useState("")
+    const [user, setUser] = useState("")
     const [error, setError] = useState(false)
-
+    const navigate = useNavigate ()
     const handleSubmit = (e) => {
         e.preventDefault()
         if (
-            nombre == "" || contraseña == "") {
+            user == "" || contraseña == "") {
             setError(true)
             return
         }
         setError(false)
 
-        setUser([nombre])
+        setUser({nombre})
+        localStorage.setItem('user',user)
+        navigate("/home")
     }
-
-
     return (
         <section className='section'>
             <form className='formulario' onSubmit={handleSubmit}>
@@ -29,7 +31,7 @@ const Formulario = ({ setUser }) => {
                         id="email"
                         name="email"
                         type="text"
-                        value={nombre} onChange={e => setNombre(e.target.value)}
+                        value={user} onChange={e => setUser(e.target.value)}
                     />
                     <input
                         placeholder="Password"

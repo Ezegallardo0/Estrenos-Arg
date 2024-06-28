@@ -1,13 +1,15 @@
 import React from 'react'
 import '../styles/Home.css'
 import Top10PelisPlus from './Top10PelisPlus'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
-const Home = ({ user, setUser }) => {
-
+const Home = () => {
+  const user = localStorage.getItem('user');
+  console.log(user)
+  const navigate = useNavigate()
   const handleLogout = () => {
-    setUser([])
+    navigate("/")
   }
   return (
     <>

@@ -1,11 +1,12 @@
 import React from 'react'
 import '../styles/Peliculas.css'
-import { Link } from 'react-router-dom'
+import { Link , useNavigate } from 'react-router-dom'
 
-const Peliculas = ({ user, setUser }) => {
-
+const Peliculas = () => {
+  const user = localStorage.getItem('user');
+  const navigate = useNavigate()
   const handleLogout = () => {
-    setUser([])
+    navigate("/")
   }
   const movie = [
     { number: 1, title: "Oppenheimer", imgSrc: "https://image.tmdb.org/t/p/original/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg" },
