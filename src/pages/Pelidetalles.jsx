@@ -16,7 +16,7 @@ const Pelidetalles = () => {
     const idNumerico = Number(idBuscado);
     return movie.find(obj => obj.number === idNumerico);
   };
-
+  
   useEffect(() => {
     console.log("id",id)
     console.log("movie",movie)
@@ -24,6 +24,9 @@ const Pelidetalles = () => {
     console.log(objeto)
     setObjetoBuscado(objeto);
   }, [id]);
+
+  const movieInfo = movie.find(m => m.number === id);
+  console.log("nito puto",movieInfo)
 
   console.log("es este",ObjetoBuscado);
 
